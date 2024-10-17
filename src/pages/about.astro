@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ViewTransitions } from 'astro:transitions';
+---
+
+
+<Layout title="About Us">
+  <section class="about-section">
+
+    <a href="/" class="btn btn-primary" transition:animate="none">Go somewhere</a>
+    <h1>About Us</h1>
+    <p>
+      Welcome to our website! We are a passionate team dedicated to providing top-quality products and services. Our mission is to deliver exceptional value to our customers while continuously innovating and improving.
+    </p>
+    
+    <h2>Our Story</h2>
+    <p>
+      Founded in [Year], we started with the goal of [Company's purpose]. Over the years, we have grown into a trusted name in our industry, known for our [mention values or unique selling points].
+    </p>
+    
+    <h2>Meet the Team</h2>
+    <p>
+      Our team consists of experienced professionals who are dedicated to making a difference. [You can provide more details about the team or link to a separate page with team bios].
+    </p>
+    
+    <h2>Contact Us</h2>
+    <p>
+      If you’d like to know more about us or have any questions, feel free to <a href="/contact">reach out</a>! We’re always happy to connect with our community.
+    </p>
+  </section>
+</Layout>
+
+<style>
+  .about-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+
+  h1, h2 {
+    color: #333;
+  }
+
+  p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  a {
+    color: #007bff;
+    text-decoration: underline;
+  }
+</style>

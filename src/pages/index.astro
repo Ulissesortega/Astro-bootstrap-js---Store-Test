@@ -1,0 +1,74 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+import "bootstrap/dist/css/bootstrap.min.css";
+import Layout from "../layouts/Layout.astro";
+import Product from "../components/Product.astro";
+---
+
+<Layout title="Welcome Astro">
+  <!-- First Row -->
+  <div class="row mt-3 ">
+    <div class="col-6">
+      <h1 class="text-center">
+        Granite Expo Outlet
+      </h1>
+    </div>
+    <div class="col-6">
+      <video autoplay loop muted src="/public/ge.mp4" style="width: 60%; border-radius: 15px;"></video>
+    </div>
+  </div>
+
+  <!-- Second Row of Cards -->
+  <div class="row mt-4 container-fluid">
+    <div class="col-3 mb-4">
+      <div class="card" style="width: 100%;">
+        <img class="card-img-top" src="/public/M25.jpg" alt="Card image cap" style="height: 200px; object-fit:fill; width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="/about" class="btn btn-primary" transition:animate="none">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3 mb-4">
+      <div class="card" style="width: 100%;">
+        <img class="card-img-top" src="/public/Vanity.jpg" alt="Card image cap" style="height: 200px; object-fit:fill; width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3 mb-4">
+      <div class="card" style="width: 100%;">
+        <img class="card-img-top" src="..." alt="Card image cap" style="height: 200px; object-fit: contain; width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3 mb-4">
+      <div class="card" style="width: 100%;">
+        <img class="card-img-top" src="..." alt="Card image cap" style="height: 200px; object-fit: contain; width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  video {
+    height: 100%;
+    border-radius: 15px;
+  }
+</style>

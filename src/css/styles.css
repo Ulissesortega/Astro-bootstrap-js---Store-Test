@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.column {
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
